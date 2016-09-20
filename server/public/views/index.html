@@ -26,9 +26,10 @@
     <p> Cat's name: {{catName}} Cat's trait: {{catTrait}}
     </p>
     <table>
+      <h2>Pi Cats Table</h2>
       <tr ng-repeat="cat in allCats">
-        <td{{cat.Name}}></td>
-        <td{{cat.Trait}}></td>
+        <td>{{cat.name}}</td>
+        <td>{{cat.trait}}</td>
       </tr>
     </table>
   </div>
