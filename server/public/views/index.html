@@ -13,16 +13,18 @@
     <div ng-controller="catController">
     <form id="cat-form">
       <label for="title">Name:</label>
-      <input type="text" id="name" name="name" />
+      <input type="text" ng-model="catName" />
 
       <label for="artist">Personality Trait:</label>
-      <input type="text" id="trait" name="trait" />
+      <input type="text" ng-model="catTrait" />
 
-      <button id="cat-submit">Add Cat!</button>
+      <button ng-click="addCat()">Add Cat!</button>
     </form>
 
     <h1>Pi Cats</h1>
     <div id="cat-list"></div>
+    <p> Cat's name: {{catName}} Cat's trait: {{catTrait}}
+    </p>
   </div>
   </body>
 </html>
