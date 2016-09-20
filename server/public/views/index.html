@@ -25,6 +25,12 @@
     <div id="cat-list"></div>
     <p> Cat's name: {{catName}} Cat's trait: {{catTrait}}
     </p>
+    <table>
+      <tr ng-repeat="cat in allCats">
+        <td{{cat.Name}}></td>
+        <td{{cat.Trait}}></td>
+      </tr>
+    </table>
   </div>
   </body>
 </html>

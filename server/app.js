@@ -3,6 +3,9 @@ var app = express();
 var bodyParser = require('body-parser');
 var path = require('path');
 var cats = require('./routes/cats');
+app.use(bodyParser.json());
+
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 
